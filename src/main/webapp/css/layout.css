@@ -1,0 +1,127 @@
+.viewadd{
+ top: 90%;
+ width: 100%;
+ padding: 0px;
+ width: -webkit-fill-available;
+ border: none;
+ display: none;
+ animation: headerNotify ease-in 0.45s;
+
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s ease;
+  }
+  .card-hover:hover .overlay {
+    opacity: 1;
+    display: block;
+  }
+
+  .card-item__img2{
+    padding-top: 91%;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center ;
+    margin: 15px 15px 15px 15px;
+    border-radius: 6px;
+}
+.card-item__img{
+    display: block;
+    padding-top: 95%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 8px;
+    border-radius: 6px;
+}
+.card-item__img-modal{
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 8px;
+    border-radius: 6px;
+}
+.card-item__img2-modal{
+    padding-top: 98%;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center ;
+    margin: 8px;
+    border-radius: 6px;
+}
+.card-hover:hover .overlay{
+    opacity: 1;
+    display: block;
+}
+
+.price_old{
+    color: rgb(173, 176, 179);
+    text-decoration: line-through;
+
+}
+.card-contend a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+
+}
+.card-hover{
+    background-color: rgb(237,237,237);
+}
+.card-hover:hover .viewadd{
+    display: block;
+}
+.viewadd a{
+    border: none;
+    width:inherit;
+    border-radius:0px ;
+    background-color: rgba(190, 190, 190, 0.7);
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+@keyframes headerNotify{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* số thứ tư  */
+/* table {
+    counter-reset: rowNumber;
+}
+table tr {
+    counter-increment: rowNumber;
+}
+
+table tr td:first-child::before {
+    content: counter(rowNumber);
+    min-width: 1em;
+    margin-right: 0.5em;
+}
+ */
+table {
+	counter-reset: rowNumber;
+}
+table tr{
+counter-increment: rowNumber;	 
+}
+table tr td::first-child::before{
+	counter-increment: rowNumber;
+	content: counter(rowNumber);
+}
